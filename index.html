@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f3ModuleTest</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>MY Public IP ADDRESS :</h1>
+        <button onclick="getData()">Get Data</button>
+    </div>
+    <div class="map-container">
+        <h1>MY Public IP ADDRESS : <span id="ipAdd"></span></h1>
+        <div class="address" id="address">
+            <div class="upper">
+                <div>
+                    <h3 id="latt"></h3>
+                    <h3 id="city"></h3>
+                </div>
+                <div>
+                    <h3 id="organisation"></h3>
+                    <h3 id="long"></h3>
+                </div>
+                <div>
+                    <h3 id="region"></h3>
+                    <h3 id="host"></h3>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <div class="tdpm">
+            <h3 id="timeZone"></h3>
+            <h3 id="dateTime"></h3>
+            <h3 id="codepin"></h3>
+            <h3 id="message"></h3>
+        </div>
+        <input type="text" class="search" id="search" placeholder="Filter">
+        <div class="postOfficeDetails" id="postOfficeDetails"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
